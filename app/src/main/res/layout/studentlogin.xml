@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+        android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="479dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            style="@style/Base.AlertDialog.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:fontFamily="cursive"
+            android:text="Student Registration "
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:hint="STUDENT NAME"
+            android:textColor="@android:color/background_dark"
+            android:layout_margin="10dp"
+            android:layout_weight="0.03"
+            android:id="@+id/name"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:hint="REGISTRATION NUMBER"
+            android:id="@+id/regnno"
+            android:textColor="@android:color/background_dark"
+            android:layout_margin="10dp"
+            android:layout_weight="0.04" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:hint="MENTOR ID"
+            android:id="@+id/mentorid"
+            android:textColor="@android:color/background_dark"
+            android:layout_margin="10dp"
+            android:layout_weight="0.10" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:hint="LAST SEM CGPA"
+            android:id="@+id/cgpa"
+            android:textColor="@android:color/background_dark"
+            android:layout_margin="10dp"
+            android:layout_weight="0.10" />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:background="@android:color/holo_blue_bright"
+            android:hint="COMPLAINTS"
+            android:id="@+id/complaints"
+            android:paddingLeft="100dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_margin="10dp"
+            android:layout_weight="0.04" />
+
+            <Button
+                android:id="@+id/savestudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.04"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="submit" />
+
+
+        </LinearLayout>
+
+</ScrollView></LinearLayout>
+
+
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"    android:background="@android:color/background_dark"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="479dp"><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        style="@style/Base.AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:fontFamily="cursive"
+        android:text="Mentor Login "
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:hint="USERNAME"
+        android:textColor="@android:color/background_dark"
+    android:layout_margin="30dp"
+        android:layout_weight="0.10"
+        android:id="@+id/idm"
+        />
+
+
+        <EditText
+            android:id="@+id/pass"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_weight="0.10"
+            android:background="@android:color/holo_blue_bright"
+            android:hint="PASSWORD"
+            android:textColor="@android:color/background_dark" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:hint="MENTOR ID"
+            android:textColor="@android:color/background_dark"
+            android:layout_margin="30dp"
+            android:layout_weight="0.10"
+            android:id="@+id/mid"
+            />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="submit"
+        android:layout_marginTop="50dp"
+        android:id="@+id/checkmentor"
+        android:onClick="onClick"
+        android:clickable="true"
+        />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
